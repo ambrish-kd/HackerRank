@@ -23,11 +23,11 @@ string solve(int n){
 
 int main(){
     int left, right;
-    cin>>left>>right;
-    for(int i=left; i<right+1; i++){
+    cin>> left >> right;
+    for(int i=left; i < right+1; i++){
         string st;
         st = solve(i);
-        cout<<st<<endl;
+        cout<< st << endl;
     }
     return 0;
 }
