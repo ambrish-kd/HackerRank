@@ -4,12 +4,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Student{
+class Student {
 private:
     int age;
     int standard;
     string firstName;
     string lastName;  
+
 public:
     void setAge(int a) {
         age = a;
@@ -38,7 +39,7 @@ public:
     string toString() { 
         stringstream ss;
         char c = ',';
-        ss << age << c << firstName << c << lastName << c << standard;
+        ss<<age<<c<<firstName<<c<<lastName<<c<<standard;
         return ss.str();
     }
 };
@@ -46,17 +47,17 @@ public:
 int main() {
     int age, standard;
     string first_name, last_name;
-    cin >> age >> first_name >> last_name >> standard;
-    
+    cin>>age>>first_name>>last_name>>standard;
+
     Student st;
     st.setAge(age);
     st.setStandard(standard);
     st.setFirstName(first_name);
     st.setLastName(last_name);
     
-    cout << st.getAge() << "\n";
-    cout << st.getLastName() << ", " << st.getFirstName() << "\n";
-    cout << st.getStandard() << "\n";
-    cout << "\n";
-    cout << st.toString();
+    cout<<st.getAge()<<"\n";
+    cout<<st.getLastName()<<", "<<st.getFirstName()<<"\n";
+    cout<<st.getStandard()<<"\n";
+    cout<<"\n";
+    cout<<st.toString();
 }
