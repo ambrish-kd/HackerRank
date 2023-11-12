@@ -4,7 +4,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-string solve(int n){
+string solve(int n) {
     unordered_map<int, string> mp;
     mp[1] = "one";
     mp[2] = "two";
@@ -15,19 +15,19 @@ string solve(int n){
     mp[7] = "seven";
     mp[8] = "eight";
     mp[9] = "nine";
-    if(n <= 9)
+    if(n <= 9) {
         return mp[n];
-    else
+    } else {
         return (n%2 == 1) ? "odd" : "even";
+    }
 }
 
-int main(){
+int main() {
     int left, right;
     cin>>left>>right;
-    for(int i=left; i < right+1; i++){
+    for(int i=left; i<right+1; i++){
         string st;
         st = solve(i);
-        cout<<st<< endl;
+        cout<<st<<endl;
     }
-    return 0;
 }
