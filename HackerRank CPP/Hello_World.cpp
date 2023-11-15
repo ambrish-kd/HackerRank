@@ -1,10 +1,9 @@
 // Problem Name:- Say "Hello, World!" With C++
 // Problem Link:- https://www.hackerrank.com/challenges/cpp-hello-world/problem?isFullScreen=true
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    cout << "Hello, World!";
-    return 0;
+int main() {
+    cout<<"Hello, World!";
 }
