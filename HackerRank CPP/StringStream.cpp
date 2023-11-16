@@ -7,14 +7,13 @@ using namespace std;
 int main() {
     string s;
     cin>>s;
-    string temp="";
-    for(int i=0; i<=s.size(); i++){
-        if(s[i] == ',' || i==s.size()){
+    string temp = "";
+    for(int i=0; i<=s.size(); i++) {
+        if(s[i] == ',' || i==s.size()) {
             cout<<temp<<endl;
             temp = "";
-        }else{
+        } else {
             temp.push_back(s[i]);
         }
-    } 
-    return 0;
+    }
 }
