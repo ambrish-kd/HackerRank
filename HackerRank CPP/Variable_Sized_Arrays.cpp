@@ -1,30 +1,27 @@
 // Problem Name:- Variable Sized Arrays
 // Problem Link:- https://www.hackerrank.com/challenges/variable-sized-arrays/problem?isFullScreen=true
 
-#include <vector>
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main() {
     int n, q;
-    cin >> n >> q;
+    cin>>n>>q;
     vector<vector<int>> arrays;
-    while(n--){
+    while(n--) {
         int k;
-        cin >> k;
+        cin>>k;
         vector<int> arr;
-        while(k--){
+        while(k--) {
             int a;
-            cin >> a;
+            cin>>a;
             arr.push_back(a);
         }
         arrays.push_back(arr);
     }
-    
-    while(q--){
+    while(q--) {
         int arrNum, idx;
-        cin >> arrNum >> idx;
-        cout << arrays[arrNum][idx] << endl;
+        cin>>arrNum>>idx;
+        cout<<arrays[arrNum][idx]<<endl;
     }
-    return 0;
 }
