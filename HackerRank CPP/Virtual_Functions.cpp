@@ -2,7 +2,7 @@
 // Problem Link:- https://www.hackerrank.com/challenges/virtual-functions/problem?isFullScreen=true
 
 class Person {
-    public:
+public:
     string name;
     int age;
     
@@ -15,7 +15,7 @@ class Person {
 };
 
 class Professor : public Person {
-    public:
+public:
     int publications;
     static int id;
     int cur_id;
@@ -34,7 +34,7 @@ int Professor::id = 0;
 
 #define NUM_OF_MARKS 6
 class Student : public Person {
-    public:
+public:
     int marks[NUM_OF_MARKS];
     static int id;
     int cur_id;
@@ -44,13 +44,13 @@ class Student : public Person {
     }
     void getdata() {
         cin>>this->name>>this->age;
-        for(int i=0; i<NUM_OF_MARKS; i++){
+        for(int i=0; i<NUM_OF_MARKS; i++) {
             cin>>marks[i];
         }
     }
     void putdata() {
         int marksSum = 0;
-        for(int i=0; i<NUM_OF_MARKS; i++){
+        for(int i=0; i<NUM_OF_MARKS; i++) {
             marksSum += marks[i];
         }
         cout<<this->name<<" "<<this->age<<" "<<marksSum<<" "<<this->cur_id<<endl;
