@@ -15,10 +15,9 @@ int max_of_four(int a, int b, int c, int d) {
     }
 }
 
-int main(){
+int main() {
     int num1, num2, num3, num4;
     scanf("%d\n%d\n%d\n%d", &num1, &num2, &num3, &num4);
     int max = max_of_four(num1, num2, num3, num4);
     printf("%d",max);
-    return 0;
 }
